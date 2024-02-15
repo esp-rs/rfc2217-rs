@@ -19,6 +19,6 @@ jobs:
     - name: Build std
       run: cargo build --verbose --no-default-features --features=std
     - name: Build no_std
-      run: cargo build --verbose --no-default-features
+      run: cargo build --verbose --lib --no-default-features
     - name: Run tests
       run: cargo test --verbose
